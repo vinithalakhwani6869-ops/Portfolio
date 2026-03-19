@@ -22,7 +22,7 @@ const Contact = () => {
 
         <div className="space-y-4">
           <a
-            href="mailto:hello@vinithalakhwani.dev"
+            href="mailto:vinithalakhwani6869@gmail.com"
             className="btn-keycap text-xs inline-flex items-center gap-2"
           >
             <Mail size={14} />
