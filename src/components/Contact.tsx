@@ -29,6 +29,9 @@ const Contact = () => {
             SEND_EMAIL
             <ArrowUpRight size={14} />
           </a>
+          <p className="text-xs text-muted-foreground">
+            vinithalakhwani6869@gmail.com
+          </p>
         </div>
 
         <div className="mt-16 pt-8 border-t border-border">
