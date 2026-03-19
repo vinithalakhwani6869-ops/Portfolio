@@ -50,7 +50,7 @@ const Sidebar = () => {
           <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin size={16} />
           </a>
-          <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="mailto:vinithalakhwani6869@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
             <Mail size={16} />
           </a>
         </div>
