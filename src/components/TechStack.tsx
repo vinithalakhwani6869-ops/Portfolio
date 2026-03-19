@@ -14,7 +14,7 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, x: -10 },
-  show: { opacity: 1, x: 0, transition: { duration: 0.4, ease: [0.19, 1, 0.22, 1] } },
+  show: { opacity: 1, x: 0, transition: { duration: 0.4, ease: [0.19, 1, 0.22, 1] as const } },
 };
 
 const TechStack = () => {
