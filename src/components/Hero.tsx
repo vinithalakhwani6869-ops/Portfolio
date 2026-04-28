@@ -31,10 +31,8 @@ const Hero = () => {
         <span className="text-primary">// FULL_STACK_DEV</span>
       </motion.h1>
 
-      <motion.p variants={item} className="text-muted-foreground max-w-xl text-sm leading-relaxed mb-8">Translating complex logic into performant web interfaces. Currently building  crafting clean server-rendered views with purpose.
-
-
-
+      <motion.p variants={item} className="text-muted-foreground max-w-xl text-sm leading-relaxed mb-8">
+        I'm a developer figuring things out one project at a time — mostly working with ERB and Rails right now, with a few AI side projects in the mix. I care about code that's readable, things that actually work, and picking up whatever the next build needs. Open to freelance website work too.
       </motion.p>
 
       <motion.div variants={item} className="flex gap-4 flex-wrap">

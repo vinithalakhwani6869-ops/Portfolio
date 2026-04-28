@@ -38,11 +38,11 @@ const projects: Project[] = [
   },
   {
     id: "04",
-    title: "Blog Engine",
-    description: "Markdown-powered blog with syntax highlighting, RSS feed, and SEO-optimized server-rendered pages.",
-    tags: ["Rails", "ERB", "Markdown", "SEO"],
-    status: "live",
-    erbSnippet: `<article class="post">\n  <%= sanitize @post.rendered_body,\n    tags: ALLOWED_TAGS %>\n</article>`,
+    title: "ToolMesh - Distributed AI Workflow Engine",
+    description: "A distributed engine that orchestrates AI tools across nodes, routing tasks through composable workflows with fault-tolerant execution.",
+    tags: ["Python", "Distributed Systems", "AI", "Workflow"],
+    status: "wip",
+    erbSnippet: `<% @workflow.nodes.each do |node| %>\n  <%= render "nodes/#{node.kind}",\n    status: node.status %>\n<% end %>`,
   },
 ];
 
