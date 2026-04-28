@@ -14,19 +14,19 @@ interface Project {
 const projects: Project[] = [
   {
     id: "01",
-    title: "E-Commerce Platform",
-    description: "A full-stack Rails e-commerce app with product management, cart functionality, and payment integration.",
-    tags: ["Ruby on Rails", "ERB", "PostgreSQL", "Stripe"],
+    title: "AI Document Summariser",
+    description: "An AI-powered tool that ingests long documents and generates concise, context-aware summaries using NLP models.",
+    tags: ["Python", "NLP", "LLM", "Streamlit"],
     status: "live",
-    erbSnippet: `<%= render partial: "products/card",\n  collection: @products,\n  cached: true %>`,
+    erbSnippet: `<%= form_with url: summarise_path do |f| %>\n  <%= f.file_field :document %>\n  <%= f.submit "Summarise" %>\n<% end %>`,
   },
   {
     id: "02",
-    title: "Task Management App",
-    description: "Collaborative task board with real-time updates, user authentication, and role-based access.",
-    tags: ["Rails", "ERB", "Hotwire", "Turbo"],
+    title: "Deep-Fake AI Detector",
+    description: "A deep-learning model that analyses images and videos to detect AI-generated or manipulated deep-fake content.",
+    tags: ["Python", "TensorFlow", "CNN", "OpenCV"],
     status: "live",
-    erbSnippet: `<%= turbo_stream_from @board %>\n<%= render @board.tasks\n  .order(priority: :desc) %>`,
+    erbSnippet: `<%= image_tag @media.url %>\n<p>Confidence:\n  <%= @result[:fake_score] %>%</p>`,
   },
   {
     id: "03",
