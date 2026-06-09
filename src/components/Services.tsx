@@ -8,11 +8,6 @@ const services = [
     description: "Custom websites built with clean, maintainable code. From landing pages to full web applications.",
   },
   {
-    icon: Code,
-    title: "ERB / Rails Development",
-    description: "Server-rendered applications using Ruby on Rails with ERB templates, optimized for performance and SEO.",
-  },
-  {
     icon: Layout,
     title: "Frontend Implementation",
     description: "Pixel-perfect responsive interfaces from design mockups. TailwindCSS, clean HTML/CSS, accessible markup.",

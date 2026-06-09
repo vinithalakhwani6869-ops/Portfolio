@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const stackItems = [
-  { category: "Backend", items: ["Ruby on Rails", "ERB Templates", "PostgreSQL", "Hotwire / Turbo"] },
-  { category: "Frontend", items: ["HTML / CSS", "TailwindCSS", "JavaScript", "Stimulus"] },
-  { category: "Tools", items: ["Git / GitHub", "VS Code", "Heroku", "Docker (learning)"] },
-  { category: "Currently Learning", items: ["React", "TypeScript", "REST APIs", "System Design"] },
+  { category: "Backend", items: ["Python", "Firebase", "REST APIs"] },
+  { category: "Frontend", items: ["HTML5", "CSS3", "TailwindCSS", "JavaScript", "React", "Vite"] },
+  { category: "Tools", items: ["Git / GitHub", "VS Code", "Google Colab","npm"] },
+  { category: "Currently Learning", items: ["Backend Development", "Cybersecurity", "Cloud computing"] },
 ];
 
 const container = {

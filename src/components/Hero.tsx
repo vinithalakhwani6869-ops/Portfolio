@@ -28,11 +28,11 @@ const Hero = () => {
         
         VINITHA_LAKHWANI
         <br />
-        <span className="text-primary">// FULL_STACK_DEV</span>
+        <span className="text-primary">// FRONT_END_DEV</span>
       </motion.h1>
 
       <motion.p variants={item} className="text-muted-foreground max-w-xl text-sm leading-relaxed mb-8">
-        I'm a developer figuring things out one project at a time — mostly working with ERB and Rails right now, with a few AI side projects in the mix. I care about code that's readable, things that actually work, and picking up whatever the next build needs. Open to freelance website work too.
+        I enjoy building things that solve real problems, whether it's a web application, an AI-powered tool, or an automation project. Most of my time is spent turning ideas into working products, experimenting with new technologies, and improving my development skills. Currently, I'm focused on frontend development while expanding my knowledge of backend systems and cloud technologies.
       </motion.p>
 
       <motion.div variants={item} className="flex gap-4 flex-wrap">
