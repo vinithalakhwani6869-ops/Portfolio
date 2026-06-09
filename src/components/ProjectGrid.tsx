@@ -7,7 +7,7 @@ interface Project {
   title: string;
   description: string;
   tags: string[];
-  status: "live" | "wip" | "archived";
+  status: "live" | "In Progress" | "archived";
   erbSnippet: string;
 }
 
@@ -16,7 +16,7 @@ const projects: Project[] = [
     id: "01",
     title: "AI Document Summariser",
     description: "An AI-powered tool that ingests long documents and generates concise, context-aware summaries using NLP models.",
-    tags: ["Python", "NLP", "LLM", "Streamlit"],
+    tags: ["HTML5", "CSS3", "NLP", "LLM", "JavaScript"],
     status: "live",
     erbSnippet: `<%= form_with url: summarise_path do |f| %>\n  <%= f.file_field :document %>\n  <%= f.submit "Summarise" %>\n<% end %>`,
   },
@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "Deep-Fake AI Detector",
     description: "A deep-learning model that analyses images and videos to detect AI-generated or manipulated deep-fake content.",
     tags: ["Python", "TensorFlow", "CNN", "OpenCV"],
-    status: "live",
+    status: "In Progress",
     erbSnippet: `<%= image_tag @media.url %>\n<p>Confidence:\n  <%= @result[:fake_score] %>%</p>`,
   },
   {
@@ -33,7 +33,7 @@ const projects: Project[] = [
     title: "Portfolio Generator",
     description: "A dynamic portfolio builder that takes YAML config and generates clean, responsive sites.",
     tags: ["Ruby", "ERB", "YAML", "TailwindCSS"],
-    status: "wip",
+    status: "In Progress",
     erbSnippet: `<% @config[:sections].each do |s| %>\n  <%= render "sections/#{s[:type]}",\n    data: s[:content] %>\n<% end %>`,
   },
   {
@@ -41,14 +41,14 @@ const projects: Project[] = [
     title: "ToolMesh - Distributed AI Workflow Engine",
     description: "A distributed engine that orchestrates AI tools across nodes, routing tasks through composable workflows with fault-tolerant execution.",
     tags: ["Python", "Distributed Systems", "AI", "Workflow"],
-    status: "wip",
+    status: "In Progress",
     erbSnippet: `<% @workflow.nodes.each do |node| %>\n  <%= render "nodes/#{node.kind}",\n    status: node.status %>\n<% end %>`,
   },
 ];
 
 const statusColors: Record<string, string> = {
   live: "text-primary",
-  wip: "text-yellow-400",
+  "In Progress": "text-yellow-400",
   archived: "text-muted-foreground",
 };
 

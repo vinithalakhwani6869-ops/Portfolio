@@ -12,6 +12,11 @@ const services = [
     title: "Frontend Implementation",
     description: "Pixel-perfect responsive interfaces from design mockups. TailwindCSS, clean HTML/CSS, accessible markup.",
   },
+  {
+    icon: Code,
+    title: "AI Integration",
+    description: "Adding AI-powered features to applications, including automation, intelligent workflows, and custom AI-assisted functionality tailored to specific use cases.",
+  },
 ];
 
 const container = {
@@ -28,7 +33,7 @@ const Services = () => {
   return (
     <section id="services" className="border-b border-border py-16 px-8">
       <div className="text-xs text-muted-foreground mb-6">{"// 004 — services"}</div>
-      <h2 className="font-display text-display text-2xl md:text-3xl font-bold mb-10">OPEN_FOR_WORK</h2>
+      <h2 className="font-display text-display text-2xl md:text-3xl font-bold mb-10">WHAT_I_DO</h2>
 
       <motion.div
         variants={container}
