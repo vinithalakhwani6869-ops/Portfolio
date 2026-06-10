@@ -9,6 +9,7 @@ interface Project {
   tags: string[];
   status: "live" | "In Progress" | "archived";
   erbSnippet: string;
+  link?: string;
 }
 
 const projects: Project[] = [
@@ -19,6 +20,7 @@ const projects: Project[] = [
     tags: ["HTML5", "CSS3", "NLP", "LLM", "JavaScript"],
     status: "live",
     erbSnippet: `<%= form_with url: summarise_path do |f| %>\n  <%= f.file_field :document %>\n  <%= f.submit "Summarise" %>\n<% end %>`,
+    link: "https://ai-document-summariser-j4a7.onrender.com",
   },
   {
     id: "02",
@@ -85,7 +87,16 @@ const ProjectGrid = () => {
         className="grid grid-cols-1 md:grid-cols-2 gap-6"
       >
         {projects.map((project) => (
-          <motion.div key={project.id} variants={item} className="project-card group">
+          <motion.div
+            key={project.id}
+            variants={item}
+            className={`project-card group ${project.link ? "cursor-pointer" : ""}`}
+            onClick={() => {
+              if (project.link) {
+                window.open(project.link, "_blank", "noopener,noreferrer");
+              }
+            }}
+          >
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <span className="text-xs text-muted-foreground">{project.id}</span>
@@ -103,7 +114,10 @@ const ProjectGrid = () => {
             {/* Toggle */}
             <div className="flex gap-2 mb-4">
               <button
-                onClick={() => toggleView(project.id)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleView(project.id);
+                }}
                 className={`text-xs px-2 py-1 border transition-colors ${
                   viewMode[project.id] !== "source"
                     ? "border-primary text-primary"
@@ -113,7 +127,10 @@ const ProjectGrid = () => {
                 [View UI]
               </button>
               <button
-                onClick={() => toggleView(project.id)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleView(project.id);
+                }}
                 className={`text-xs px-2 py-1 border transition-colors ${
                   viewMode[project.id] === "source"
                     ? "border-primary text-primary"

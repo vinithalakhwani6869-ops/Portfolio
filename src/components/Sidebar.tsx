@@ -44,13 +44,26 @@ const Sidebar = () => {
       <div className="space-y-3">
         <div className="text-xs text-muted-foreground">// connect</div>
         <div className="flex gap-3">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="https://github.com/vinithalakhwani6869-ops"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
             <Github size={16} />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="https://linkedin.com/in/vinitha-lakhwani-6431a1399"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
             <Linkedin size={16} />
           </a>
-          <a href="mailto:vinithalakhwani6869@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="mailto:vinithalakhwani.dev@gmail.com"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
             <Mail size={16} />
           </a>
         </div>
