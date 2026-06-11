@@ -13,6 +13,7 @@ const item = {
 const Hero = () => {
   return (
     <motion.section
+      id="hero"
       variants={container}
       initial="hidden"
       animate="show"
@@ -24,11 +25,11 @@ const Hero = () => {
 
       <motion.h1
         variants={item}
-        className="font-display text-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] mb-6">
+        className="font-display text-display text-[8vw] sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] mb-6">
         
         VINITHA_LAKHWANI
         <br />
-        <span className="text-primary">// FRONT_END_DEV</span>
+        <span className="text-primary whitespace-nowrap">// FRONT_END_DEV</span>
       </motion.h1>
 
       <motion.p variants={item} className="text-muted-foreground max-w-xl text-sm leading-relaxed mb-8">
