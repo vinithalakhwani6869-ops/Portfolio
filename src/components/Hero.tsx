@@ -33,7 +33,7 @@ const Hero = () => {
       </motion.h1>
 
       <motion.p variants={item} className="text-muted-foreground max-w-xl text-sm leading-relaxed mb-8">
-        I enjoy building things that solve real problems, whether it's a web application, an AI-powered tool, or an automation project. Most of my time is spent turning ideas into working products, experimenting with new technologies, and improving my development skills. Currently, I'm focused on full-stack development while expanding my knowledge of backend systems, and cloud technologies.
+        I don't have a ten-year plan, and I'm okay with that. What I do have is a habit of picking something I don't know how to build and figuring it out as I go. Since 2025, that's meant web dev, and right now it's AI tools built around problems people actually run into. Everything on this page is something that came out of that.
       </motion.p>
 
       <motion.div variants={item} className="flex gap-4 flex-wrap">
