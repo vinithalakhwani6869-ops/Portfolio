@@ -90,7 +90,7 @@ const ProjectGrid = () => {
           <motion.div
             key={project.id}
             variants={item}
-            className={`project-card group ${project.link ? "cursor-pointer" : ""}`}
+            className={`slab-card group ${project.link ? "cursor-pointer" : ""}`}
             onClick={() => {
               if (project.link) {
                 window.open(project.link, "_blank", "noopener,noreferrer");

@@ -46,7 +46,7 @@ const Services = () => {
           <motion.div
             key={service.title}
             variants={item}
-            className="border border-border p-6 hover:border-primary transition-colors"
+            className="slab-card hover:border-primary transition-colors"
           >
             <service.icon size={20} className="text-primary mb-4" />
             <h3 className="font-display text-display font-bold mb-3">{service.title}</h3>

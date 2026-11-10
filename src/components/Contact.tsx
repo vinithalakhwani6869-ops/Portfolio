@@ -22,7 +22,7 @@ const Contact = () => {
 
         <div className="space-y-4">
           <a
-            href="mailto:vinithalakhwani.dev@gmail.com"
+            href="mailto:vinithalakhwani002@gmail.com"
             className="btn-keycap text-xs inline-flex items-center gap-2"
           >
             <Mail size={14} />
@@ -30,7 +30,7 @@ const Contact = () => {
             <ArrowUpRight size={14} />
           </a>
           <p className="text-xs text-muted-foreground">
-            vinithalakhwani.dev@gmail.com
+            vinithalakhwani002@gmail.com
           </p>
         </div>
 

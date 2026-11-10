@@ -63,7 +63,7 @@ export const SidebarContent = ({ onNavItemClick }: { onNavItemClick?: () => void
             <Linkedin size={16} />
           </a>
           <a
-            href="mailto:vinithalakhwani.dev@gmail.com"
+            href="mailto:vinithalakhwani002@gmail.com"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
             <Mail size={16} />

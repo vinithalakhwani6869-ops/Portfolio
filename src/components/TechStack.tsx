@@ -4,7 +4,7 @@ const stackItems = [
   { category: "Backend", items: ["Python", "Node.js", "Firebase", "REST APIs", "API Integration"] },
   { category: "Frontend", items: ["HTML5", "CSS3", "TailwindCSS", "JavaScript", "React", "Vite"] },
   { category: "Tools", items: ["Git / GitHub", "VS Code", "Google Colab","npm"] },
-  { category: "Currently Learning", items: ["RAG", "Cybersecurity", "LangChain"] },
+  { category: "AI workflow", items: ["Opencode", "Claude", "ChatGPT", "Google AI studio","Codex","Kiro"] },
 ];
 
 const container = {
