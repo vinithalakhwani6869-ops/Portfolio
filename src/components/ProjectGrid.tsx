@@ -20,7 +20,7 @@ const projects: Project[] = [
     tags: ["HTML5", "CSS3", "NLP", "LLM", "JavaScript"],
     status: "live",
     erbSnippet: `<%= form_with url: summarise_path do |f| %>\n  <%= f.file_field :document %>\n  <%= f.submit "Summarise" %>\n<% end %>`,
-    link: "https://ai-document-summariser-j4a7.onrender.com",
+    link: "https://portfolio-puce-beta-obcjwq8cox.vercel.app/",
   },
   {
     id: "02",
